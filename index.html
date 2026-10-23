@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4a1648">
+  <meta name="description" content="Monte seu pedido de açaí na Açaí do Bairro.">
+  <title>Açaí do Bairro | Monte seu pedido</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Açaí do Bairro - início">
+      <img src="logo.png" alt="Logo Açaí do Bairro">
+      <span><strong>Açaí do Bairro</strong><small>Sabor de verdade</small></span>
+    </a>
+    <a class="link-pedido" href="#pedido">Monte seu pedido <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-texto">
+        <span class="etiqueta">FRESQUINHO, DO SEU JEITO</span>
+        <h1>Seu açaí.<br><span>Suas combinações.</span></h1>
+        <p>Escolha o tamanho, adicione seus complementos favoritos e confira o total antes de confirmar.</p>
+        <a class="botao botao-claro" href="#pedido">Começar pedido <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-selo" aria-label="Açaí feito do seu jeito">
+        <div class="selo-circulo"><span class="folha">✦</span><strong>FEITO</strong><strong>DO SEU</strong><strong>JEITO</strong><small>♥ AÇAÍ DO BAIRRO ♥</small></div>
+      </div>
+      <span class="decor decor-um" aria-hidden="true">✦</span><span class="decor decor-dois" aria-hidden="true">•</span>
+    </section>
+
+    <section class="conteudo" id="pedido">
+      <div class="titulo-secao"><span class="numero">01</span><div><p class="sobretitulo">VAMOS MONTAR?</p><h2>Crie seu açaí</h2></div></div>
+      <form id="form-pedido" novalidate>
+        <div class="cartao">
+          <div class="cabecalho-cartao"><span class="icone">🥣</span><div><h3>Escolha o tamanho</h3><p>Qual vai ser hoje?</p></div></div>
+          <div class="opcoes-tamanho">
+            <label class="opcao-tamanho selecionavel">
+              <input type="radio" name="tamanho" value="200">
+              <span class="radio-falso"></span><span class="tamanho-info"><strong>200 ml</strong><small>Até 1 adicional</small></span><strong class="preco">R$ 8,00</strong>
+            </label>
+            <label class="opcao-tamanho selecionavel">
+              <input type="radio" name="tamanho" value="300" checked>
+              <span class="radio-falso"></span><span class="tamanho-info"><strong>300 ml</strong><small>Até 2 adicionais</small></span><strong class="preco">R$ 10,00</strong>
+            </label>
+            <label class="opcao-tamanho selecionavel">
+              <input type="radio" name="tamanho" value="400">
+              <span class="radio-falso"></span><span class="tamanho-info"><strong>400 ml</strong><small>Até 3 adicionais</small></span><strong class="preco">R$ 15,00</strong>
+            </label>
+            <label class="opcao-tamanho selecionavel">
+              <input type="radio" name="tamanho" value="500">
+              <span class="radio-falso"></span><span class="tamanho-info"><strong>500 ml</strong><small>Até 4 adicionais</small></span><strong class="preco">R$ 20,00</strong>
+            </label>
+            <label class="opcao-tamanho selecionavel">
+              <input type="radio" name="tamanho" value="700">
+              <span class="radio-falso"></span><span class="tamanho-info"><strong>700 ml</strong><small>Até 5 adicionais</small></span><strong class="preco">R$ 25,00</strong>
+            </label>
+          </div>
+        </div>
+
+        <div class="cartao">
+          <div class="cabecalho-cartao"><span class="icone">🍓</span><div><h3>Escolha os adicionais</h3><p>R$ 2,00 cada · selecione os que quiser</p></div></div>
+          <div class="contador-adicionais"><span id="texto-limite">0 de 2 adicionais selecionados</span><span class="contador-pontos" id="contador-pontos" aria-hidden="true"><i class="ativo"></i><i></i></span></div>
+          <div class="grade-adicionais" id="grade-adicionais">
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Banana"><span class="check-falso">✓</span><span class="emoji">🍌</span><span class="nome-adicional">Banana</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Morango"><span class="check-falso">✓</span><span class="emoji">🍓</span><span class="nome-adicional">Morango</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Granola"><span class="check-falso">✓</span><span class="emoji">🌾</span><span class="nome-adicional">Granola</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Leite condensado"><span class="check-falso">✓</span><span class="emoji">🥛</span><span class="nome-adicional">Leite condensado</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Leite em pó"><span class="check-falso">✓</span><span class="emoji">🥄</span><span class="nome-adicional">Leite em pó</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Confete"><span class="check-falso">✓</span><span class="emoji">🍬</span><span class="nome-adicional">Confete</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Paçoca"><span class="check-falso">✓</span><span class="emoji">🥜</span><span class="nome-adicional">Paçoca</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Nutella"><span class="check-falso">✓</span><span class="emoji">🍫</span><span class="nome-adicional">Creme de avelã</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Chocolate granulado"><span class="check-falso">✓</span><span class="emoji">🍫</span><span class="nome-adicional">Granulado</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Kiwi"><span class="check-falso">✓</span><span class="emoji">🥝</span><span class="nome-adicional">Kiwi</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Uva"><span class="check-falso">✓</span><span class="emoji">🍇</span><span class="nome-adicional">Uva</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Coco ralado"><span class="check-falso">✓</span><span class="emoji">🥥</span><span class="nome-adicional">Coco ralado</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Amendoim"><span class="check-falso">✓</span><span class="emoji">🥜</span><span class="nome-adicional">Amendoim</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Mel"><span class="check-falso">✓</span><span class="emoji">🍯</span><span class="nome-adicional">Mel</span><strong>+ R$ 2,00</strong></label>
+            <label class="adicional selecionavel"><input type="checkbox" name="adicionais" value="Biscoito triturado"><span class="check-falso">✓</span><span class="emoji">🍪</span><span class="nome-adicional">Biscoito triturado</span><strong>+ R$ 2,00</strong></label>
+          </div>
+          <p class="aviso-limite" id="aviso-limite" role="status" aria-live="polite">Você pode escolher até 2 adicionais.</p>
+        </div>
+
+        <div class="cartao">
+          <div class="cabecalho-cartao"><span class="icone">🛵</span><div><h3>Dados para entrega</h3><p>Precisamos destas informações para levar até você.</p></div></div>
+          <div class="campos">
+            <div class="campo campo-largo"><label for="nome">Nome completo <span>*</span></label><input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" maxlength="80" required><small class="erro" id="erro-nome"></small></div>
+            <div class="campo"><label for="telefone">Telefone com DDD <span>*</span></label><input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(41) 99999-9999" maxlength="16" required><small class="erro" id="erro-telefone"></small></div>
+            <div class="campo"><label for="bairro">Bairro <span>*</span></label><input id="bairro" name="bairro" type="text" list="sugestoes-bairros" autocomplete="address-level3" placeholder="Comece a digitar seu bairro" maxlength="80" required><datalist id="sugestoes-bairros"><option value="Centro"><option value="Vila Nova"><option value="Jardim América"><option value="Jardim das Flores"><option value="Santa Felicidade"><option value="Bairro Alto"><option value="Boa Vista"><option value="São Francisco"><option value="Jardim Itália"><option value="Vila Esperança"></datalist><small class="dica-campo">Digite para ver sugestões ou informe outro bairro.</small><small class="erro" id="erro-bairro"></small></div>
+            <div class="campo campo-largo"><label for="endereco">Rua e número</label><input id="endereco" name="endereco" type="text" autocomplete="street-address" placeholder="Rua, número e complemento (opcional)" maxlength="160"></div>
+            <div class="campo campo-largo"><label for="observacoes">Observações do pedido</label><textarea id="observacoes" name="observacoes" rows="3" maxlength="300" placeholder="Alguma observação? (opcional)"></textarea></div>
+          </div>
+          <p class="nota-obrigatorio"><span>*</span> Campos obrigatórios</p>
+        </div>
+
+        <aside class="resumo" aria-labelledby="titulo-resumo">
+          <div class="resumo-titulo"><span class="icone">🧾</span><div><p class="sobretitulo">QUASE LÁ!</p><h3 id="titulo-resumo">Resumo do pedido</h3></div></div>
+          <div class="linha-resumo"><span id="resumo-tamanho">Açaí 300 ml</span><strong id="resumo-base">R$ 10,00</strong></div>
+          <div class="linha-resumo"><span id="resumo-adicionais">Adicionais (0)</span><strong id="resumo-valor-adicionais">R$ 0,00</strong></div>
+          <div class="linha-resumo"><span id="resumo-bairro">Taxa de entrega (informe o bairro)</span><strong id="resumo-entrega">—</strong></div>
+          <div class="linha-total"><span>Total do pedido</span><strong id="total">R$ 10,00</strong></div>
+          <p class="aviso-entrega">A taxa é R$ 5,00 para o Centro e R$ 10,00 para os demais bairros.</p>
+          <p class="mensagem-form" id="mensagem-form" role="alert" aria-live="polite"></p>
+          <button class="botao botao-principal" type="submit">Confirmar pedido <span aria-hidden="true">→</span></button>
+          <p class="texto-seguranca">Você confere o pedido antes de enviá-lo pelo WhatsApp.</p>
+        </aside>
+      </form>
+    </section>
+
+    <section class="confirmacao escondido" id="confirmacao" role="status" aria-live="polite">
+      <div class="confirmacao-icone">✓</div><p class="sobretitulo">PEDIDO PREPARADO</p><h2>Seu pedido está quase confirmado!</h2><p id="texto-confirmacao">Confira os detalhes abaixo.</p>
+      <div class="confirmacao-detalhes" id="confirmacao-detalhes"></div>
+      <p class="nota-whatsapp">Para a loja receber seu pedido, toque no botão abaixo e envie a mensagem no WhatsApp.</p>
+      <a class="botao botao-principal" id="botao-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Enviar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+      <button type="button" class="botao botao-secundario" id="novo-pedido">Montar outro pedido</button>
+    </section>
+  </main>
+
+  <footer><img src="logo.png" alt="" loading="lazy"><p><strong>Açaí do Bairro</strong><br>Sabor de verdade, pertinho de você.</p><span>Feito com carinho 💜</span></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
